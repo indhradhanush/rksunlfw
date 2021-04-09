@@ -100,6 +100,26 @@ $(function() {
 
 $(function() {
 
+        var ft = $.filtrify("container", "placeHolder", {
+                close : true,
+                callback : function( query, match, mismatch ) {
+                        if ( mismatch.length ) $("div#reset").show();
+                        else $("div#reset").hide();
+                }
+        });
+
+        $("div#reset span").click(function() {
+                ft.reset();
+        });
+
+});
+
+</script>
+
+<script type="text/javascript">
+
+$(function() {
+
         $.filtrify("container", "placeHolder", {
                 close : true,
                 callback : function( query, match, mismatch ) {
