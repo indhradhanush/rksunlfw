@@ -255,7 +255,9 @@ div#content.demo > pre.show > code {
 
 
 div#content.demo > div#placeHolder {
-  margin-top: 50px;
+  margin-top: 0px;
+  font-size :150%;
+  margin-left: 30%;
 }
 
 div#content.demo > ul { 
