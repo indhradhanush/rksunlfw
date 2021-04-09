@@ -319,7 +319,9 @@ div#content.demo > div#triggers > span {
 }
 
 div#content.demo > div#reset {
-  margin-top: 30px;
+  margin-top: 0px;
+  font-size: 125%;
+  margin-left: 30%;
 }
 div#content.demo > div#reset > span {
   cursor: pointer;
