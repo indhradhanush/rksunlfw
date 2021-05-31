@@ -96,14 +96,13 @@ div#header {
   background: #ffffff url(../img/bg-header.png);
   color: #ea7600;
   width: 100%;
-  padding: 50px 0;
+  padding: 10px 0;
   text-align: center;
 }
 div#header > h1 {
   font: 300% Roboto, sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: bold;
 }
 div#header > h1 > a,
 div#header > h1 > a:visited {
