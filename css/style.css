@@ -275,8 +275,8 @@ div#content.demo > ul > li {
   margin: 5px;
   padding: 5px;
   border-radius: 3px;
-  max-width: 300 px;
-  max-height: 500 px;
+  max-width: 300px;
+  max-height: 500px;
   font-size: 85%;
   padding-bottom: 25px;
 }
