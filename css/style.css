@@ -67,7 +67,7 @@ td { vertical-align: top; }
 
 
 
-/* Author */
+/* Author
 
 @font-face {
   font-family: 'BallparkWeiner';
@@ -79,6 +79,8 @@ td { vertical-align: top; }
   font-weight: normal;
   font-style: normal;
 }
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 a#fork img {
   position: absolute; 
@@ -91,6 +93,7 @@ a:visited { color: #1BA9D4; }
 a:hover { color: #06e; }
 
 div#header {
+  font-family: 'Roboto', sans-serif;
   background: #ffffff url(../img/bg-header.png);
   color: #ea7600;
   width: 100%;
