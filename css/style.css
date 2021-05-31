@@ -279,9 +279,9 @@ div#content.demo > ul > li {
   font-size: 85%;
 }
 div#content.demo > ul > li > img {
-  width: 248px;
-  height: 248px;
-  margin: 5px 0px;
+  width: auto;
+  height: auto;
+  margin: 2px 2px;
 }
 div#content.demo > ul > li > span {
   display: block;
