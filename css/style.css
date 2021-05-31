@@ -93,7 +93,6 @@ a:visited { color: #1BA9D4; }
 a:hover { color: #06e; }
 
 div#header {
-  font-family: 'Roboto', sans-serif;
   background: #ffffff url(../img/bg-header.png);
   color: #ea7600;
   width: 100%;
@@ -101,7 +100,7 @@ div#header {
   text-align: center;
 }
 div#header > h1 {
-  font: 300% BallparkWeiner, sans-serif;
+  font: 300% Roboto, sans-serif;
   text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
   margin: 0;
   padding: 0;
