@@ -101,7 +101,7 @@ div#header {
 }
 div#header > h1 {
   font: 300% Roboto, sans-serif;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+  text-shadow: #8a9fbb 0 0 1px;
   margin: 0;
   padding: 0;
 }
