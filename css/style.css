@@ -91,8 +91,8 @@ a:visited { color: #1BA9D4; }
 a:hover { color: #06e; }
 
 div#header {
-  background: #ffffff url(../im/bg-header.png);
-  color: #222;
+  background: #ffffff url(../img/bg-header.png);
+  color: #ea7600;
   width: 100%;
   padding: 50px 0;
   text-align: center;
@@ -128,7 +128,7 @@ div#header > iframe {
 #___plusone_0{ width:65px !important; }*/
 
 div#main {
-  background: #2D3743 url(../img/bg-main.png) repeat 0 0;
+  background: #171818 url(../img/bg-main.png) repeat 0 0;
   border-top: 1px solid #DDD;
   box-shadow: inset white 0 1px, inset rgba(0, 0, 0, 0.5) 0 0 25px;
 }
