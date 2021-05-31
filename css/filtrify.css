@@ -1,4 +1,4 @@
-/* icons font-face 
+/* icons font-face */
 @font-face {
     font-family: "FiltrifyRegular";
     src: url("../font/filtrify/filtrify-webfont.eot");
@@ -9,7 +9,6 @@
     font-weight: normal;
     font-style: normal;
 }
-*/
 
 /* reset */
 ul.ft-menu,
