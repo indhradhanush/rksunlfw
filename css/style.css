@@ -103,6 +103,7 @@ div#header > h1 {
   font: 300% Roboto, sans-serif;
   margin: 0;
   padding: 0;
+  font-weight: bold;
 }
 div#header > h1 > a,
 div#header > h1 > a:visited {
