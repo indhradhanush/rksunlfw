@@ -93,7 +93,7 @@ a:visited { color: #1BA9D4; }
 a:hover { color: #06e; }
 
 div#header {
-  background: #ffffff url(../img/bg-header.png);
+  background: #292a2a;
   color: #ea7600;
   width: 100%;
   padding: 10px 0;
