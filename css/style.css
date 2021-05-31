@@ -18,7 +18,7 @@ a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-size: 125%; font-weight: bold; }
+b, strong { font-size: 125%; font-weight: bold; color: #74aa50; }
 blockquote { margin: 1em 40px; }
 dfn { font-style: italic; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
@@ -158,7 +158,8 @@ div#content > div#browsers + h2 {
 }
 
 div#content > h2 {
-  font: italic bold 200% Georgia, serif;
+  font: 200% Roboto, serif;
+  color: #74aa50;
   margin-top: 60px;
   margin-bottom: 30px;
   text-shadow: 0 -1px black, 0 -2px #222;
