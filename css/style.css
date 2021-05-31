@@ -275,11 +275,11 @@ div#content.demo > ul > li {
   margin: 5px;
   padding: 5px;
   border-radius: 3px;
-  max-width: 256px;
+  max-width: 300px;
   font-size: 85%;
 }
 div#content.demo > ul > li > img {
-  width: 200 px;
+  width: 300 px;
   height: 200 px;
   margin: 2px 2px;
 }
