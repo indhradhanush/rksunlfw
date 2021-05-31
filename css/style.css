@@ -273,13 +273,13 @@ div#content.demo > ul > li {
   background: rgba(0, 0, 0, 0.3);
   vertical-align: top;
   margin: 5px;
-  padding: 5px;
+  padding: 2px;
   border-radius: 3px;
   max-width: 256px;
   font-size: 85%;
 }
 div#content.demo > ul > li > img {
-  width: 200 px;
+  width: 300 px;
   height: 200 px;
   margin: 2px 2px;
 }
