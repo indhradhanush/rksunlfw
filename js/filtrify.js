@@ -96,8 +96,7 @@
 		this._menu.list = $("<ul class='ft-menu' />");
 
 		for ( f; f < this._order.length; f++ ) {
-			field = browser.webkit || browser.opera ? 
-				this._order[f] : this._order[ this._order.length - f - 1 ];
+			field = this._order[f];
 			this._menu[ field ] = {};
 			this.build( field );
 			this.cache( field );

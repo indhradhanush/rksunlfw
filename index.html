@@ -16,11 +16,9 @@
 <link rel="stylesheet" href="css/sunburst.css">
 <link rel="stylesheet" href="css/filtrify.css">
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/highlight.pack.js"></script>
-<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/filtrify.min.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 <style>
 /**** Isotope Filtering- ****/
@@ -85,68 +83,40 @@ $(function() {
         layoutMode : 'fitRows'
     });
     
-    $.filtrify("container", "placeHolder", {
+    var ft = $.filtrify("container", "placeHolder", {
         hide     : false,
         callback : function ( query, match, mismatch ) {
             container.isotope({ filter : $(match) });
+			if ( !mismatch.length ) {
+				// $("div#reset").hide();
+				$("#legend").html("<i>Viewing all Versions.</i>");
+			} else {
+				// $("div#reset").show();
+				var category, tags, i, tag, legend = "<h4>Viewing:</h4>";
+				for ( category in query ) {
+					tags = query[category];
+					if ( tags.length ) {
+						legend += "<p><span>" + category + ":</span>";
+						for ( i = 0; i < tags.length; i++ ) {
+							tag = tags[i];
+							legend += "<em>" + tag + "</em>";
+						};
+						legend += "</p>";
+					};
+				};
+				legend += "<p><i>" + match.length + " version" + (match.length !== 1 ? "s" : "") + " found. ↓</i></p>";
+				$("#legend").html( legend );
+			};
         }
     });
 
+	$("div#reset span").click(function() {
+		ft.reset();
+	});
 });
 
 </script>
 
-<script type="text/javascript">
-
-$(function() {
-
-        var ft = $.filtrify("container", "placeHolder", {
-                close : true,
-                callback : function( query, match, mismatch ) {
-                        if ( mismatch.length ) $("div#reset").show();
-                        else $("div#reset").hide();
-                }
-        });
-
-        $("div#reset span").click(function() {
-                ft.reset();
-        });
-
-});
-
-</script>
-
-<script type="text/javascript">
-
-$(function() {
-
-        $.filtrify("container", "placeHolder", {
-                close : true,
-                callback : function( query, match, mismatch ) {
-                        if ( !mismatch.length ) {
-                                $("#legend").html("<i>Viewing all Versions.</i>");
-                        } else {
-                                var category, tags, i, tag, legend = "<h4>Viewing:</h4>";
-                                for ( category in query ) {
-                                        tags = query[category];
-                                        if ( tags.length ) {
-                                                legend += "<p><span>" + category + ":</span>";
-                                                for ( i = 0; i < tags.length; i++ ) {
-                                                        tag = tags[i];
-                                                        legend += "<em>" + tag + "</em>";
-                                                };
-                                                legend += "</p>";
-                                        };
-                                };
-                                legend += "<p><i>" + match.length + " version" + (match.length !== 1 ? "s" : "") + " found. ↓</i></p>";
-                                $("#legend").html( legend );
-                        };
-                }
-        });
-
-});
-
-</script>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 </style>

@@ -64,22 +64,6 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-
-
-
-/* Author
-
-@font-face {
-  font-family: 'BallparkWeiner';
-  src: url('../font/ballpark/ballpark_weiner-webfont.eot');
-  src: url('../font/ballpark/ballpark_weiner-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../font/ballpark/ballpark_weiner-webfont.woff') format('woff'),
-       url('../font/ballpark/ballpark_weiner-webfont.ttf') format('truetype'),
-       url('../font/ballpark/ballpark_weiner-webfont.svg#BallparkWeiner') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 a#fork img {
